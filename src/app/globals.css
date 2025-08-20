@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+.gradient-bg {
+  @apply min-h-screen bg-gradient-to-b from-[#0a0a0a] via-[#121212] to-[#1f1f1f];
+}
+
+@theme {
+  --color-primary-100: #ede9ff;
+  --color-primary-200: #d3c9ff;
+  --color-primary-300: #b3a3ff;
+  --color-primary-400: #947eff;
+  --color-primary-500: #7357ff;
+  --color-primary-600: #5c45d1;
+  --color-primary-700: #4735a3;
+  --color-primary-800: #312575;
+
+  --color-bg-darkest: #0b0909;
+  --color-bg-dark: #121212;
+  --color-bg-light: #181818;
+  --color-bg-lighter: #2a2a2a;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+}
