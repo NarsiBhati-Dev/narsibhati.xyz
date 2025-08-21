@@ -9,13 +9,10 @@ export default function GitHubContributionCalendar() {
     dark: ["#18181b", "#3f3f46", "#52525b", "#71717a", "#d4d4d8"],
   };
 
-
-
   return (
-    <div className="bg-bg-darkest p-4 w-full text-white rounded-lg max-w-[900px] mx-auto">
+    <div className="bg-bg-darkest mx-auto w-full max-w-[900px] rounded-lg p-4 text-white">
       {/* Title */}
-      <div className="text-white text-lg font-mono pl-8 mb-4">Github</div>
-
+      <div className="mb-4 pl-8 font-mono text-lg text-white">Github</div>
       <div className="flex flex-col items-center">
         {/* Calendar */}
         <GitHubCalendar
@@ -27,6 +24,6 @@ export default function GitHubContributionCalendar() {
           showWeekdayLabels={false}
         />
       </div>
-    </div >
+    </div>
   );
 }
